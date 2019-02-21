@@ -13,7 +13,7 @@ As this package is just a wrapper around `flint`, you will need something to
 actually run it. By default the [Linter][] package will be installed for you to
 fill this need.
 
-# Considerations
+## Considerations
 
 By default the linter status bar shows counts for the entire project and the panel shows the messages for the current file.
 
