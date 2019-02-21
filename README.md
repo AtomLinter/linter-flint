@@ -15,7 +15,9 @@ fill this need.
 
 ## Considerations
 
-By default the linter status bar shows counts for the entire project and the panel shows the messages for the current file.
+Since `flint` reports messages about the project as a whole there is no file to associate them to, so we mark them as coming from a "fake" `flint-messages` file. Unfortunately under the default settings for `linter-ui-default`, this means the messages from this provider will only ever show up in the status bar counts.
+
+In order to show these messages you will need to change `linter-ui-default`'s Panel to represent the entire project in the settings.
 
 The `status bar/panel` can be configured what `scope` of messages they are showing.
 
