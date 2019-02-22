@@ -1,5 +1,26 @@
 # Change Log
 
+## [v2.0.0](https://github.com/AtomLinter/linter-flint/tree/v2.0.0) (2019-02-22)
+[Full Changelog](https://github.com/AtomLinter/linter-flint/compare/v1.0.1...v2.0.0)
+
+**Implemented enhancements:**
+
+- V2 linter API support [\#39](https://github.com/AtomLinter/linter-flint/pull/39) ([vzamanillo](https://github.com/vzamanillo))
+- chore\(deps\): update dependency eslint to v5.14.1 [\#38](https://github.com/AtomLinter/linter-flint/pull/38) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency eslint to v5.14.0 [\#37](https://github.com/AtomLinter/linter-flint/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update eslint packages \(major\) [\#36](https://github.com/AtomLinter/linter-flint/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
+- Configure Renovate [\#34](https://github.com/AtomLinter/linter-flint/pull/34) ([renovate[bot]](https://github.com/apps/renovate))
+- Update atom-package-deps to version 5.0.0 🚀 [\#32](https://github.com/AtomLinter/linter-flint/pull/32) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Asyncify the specs [\#24](https://github.com/AtomLinter/linter-flint/pull/24) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update eslint-config-airbnb-base to version 12.0.0 🚀 [\#23](https://github.com/AtomLinter/linter-flint/pull/23) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+**Fixed bugs:**
+
+- Support v2 Linter API [\#33](https://github.com/AtomLinter/linter-flint/issues/33)
+- Migrate CircleCI to a 2.0 configuration [\#26](https://github.com/AtomLinter/linter-flint/issues/26)
+- fix\(deps\): pin dependencies [\#35](https://github.com/AtomLinter/linter-flint/pull/35) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgrade to CircleCI 2.0 [\#31](https://github.com/AtomLinter/linter-flint/pull/31) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v1.0.1](https://github.com/AtomLinter/linter-flint/tree/v1.0.1) (2017-08-28)
 [Full Changelog](https://github.com/AtomLinter/linter-flint/compare/v1.0.0...v1.0.1)
 

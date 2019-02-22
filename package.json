@@ -1,7 +1,7 @@
 {
   "name": "linter-flint",
   "main": "./lib/linter-flint.js",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "description": "Lint projects using flint",
   "repository": "https://github.com/AtomLinter/linter-flint",
