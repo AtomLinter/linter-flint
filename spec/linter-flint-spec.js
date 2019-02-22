@@ -31,31 +31,22 @@ describe('The Flint provider for Linter', () => {
 
   it('checks a project with issues and reports the found issues', async () => {
     atom.project.addPath(path.dirname(badPath));
+    const projectPath = atom.project.relativizePath(badPath)[0];
     const editor = await atom.workspace.open(badPath);
     const messages = await lint(editor);
 
-    expect(messages[0].type).toBe('Warning');
     expect(messages[0].severity).toBe('warning');
-    expect(messages[0].html).not.toBeDefined();
-    expect(messages[0].text).toBe('Bootstrap script not found');
-    expect(messages[0].filePath).not.toBeDefined();
-    expect(messages[0].range).not.toBeDefined();
-    expect(messages[0].trace).toEqual([{
-      type: 'Trace',
-      severity: 'info',
-      html: 'A bootstrap script makes setup a snap. (<a href="http://bit.ly/JZjVL6">link</a>)',
-    }]);
+    expect(messages[0].description).toBe('A bootstrap script makes setup a snap.');
+    expect(messages[0].url).toBe('http://bit.ly/JZjVL6');
+    expect(messages[0].excerpt).toBe('Bootstrap script not found');
+    expect(messages[0].location.file).toBe(`${projectPath}/flint-messages`);
+    expect(messages[0].location.position).toEqual([[0, 0], [0, 0]]);
 
-    expect(messages[1].type).toBe('Warning');
     expect(messages[1].severity).toBe('warning');
-    expect(messages[1].html).not.toBeDefined();
-    expect(messages[1].text).toBe('Test script not found');
-    expect(messages[1].filePath).not.toBeDefined();
-    expect(messages[1].range).not.toBeDefined();
-    expect(messages[1].trace).toEqual([{
-      type: 'Trace',
-      severity: 'info',
-      html: 'Make it easy to run the test suite regardless of project type. (<a href="http://bit.ly/JZjVL6">link</a>)',
-    }]);
+    expect(messages[1].description).toBe('Make it easy to run the test suite regardless of project type.');
+    expect(messages[1].url).toBe('http://bit.ly/JZjVL6');
+    expect(messages[1].excerpt).toBe('Test script not found');
+    expect(messages[1].location.file).toBe(`${projectPath}/flint-messages`);
+    expect(messages[1].location.position).toEqual([[0, 0], [0, 0]]);
   });
 });
