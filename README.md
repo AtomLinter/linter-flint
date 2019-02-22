@@ -2,7 +2,7 @@
 
 Lint projects using [`flint`][flint].
 
-# Installation
+## Installation
 
 You need to have [`flint`][flint] installed on your system before using this
 package. Once that is setup this package should work right away. If you are
