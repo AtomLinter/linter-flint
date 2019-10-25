@@ -17,7 +17,7 @@ describe('The Flint provider for Linter', () => {
     atom.workspace.destroyActivePaneItem();
     // Close all project paths
     const projectPaths = atom.project.getPaths();
-    projectPaths.forEach(projectPath => atom.project.removePath(projectPath));
+    projectPaths.forEach((projectPath) => atom.project.removePath(projectPath));
     // Activate the linter
     await atom.packages.activatePackage('linter-flint');
   });
